@@ -1,0 +1,29 @@
+{
+  "name": "@bearbroidery/solixi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.tsx",
+  "module": "./src/index.tsx",
+  "types": "./src/index.tsx",
+  "scripts": {
+    "playground": "vite",
+    "dev": "vite build -w",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@bearbroidery/constructables": "*",
+    "@solid-primitives/raf": "^2.1.12",
+    "pixi.js": "^7.2.4",
+    "solid-js": "^1.7.8"
+  },
+  "devDependencies": {
+    "solid-devtools": "^0.27.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.3.1",
+    "vite-plugin-inspect": "0.7.14",
+    "vite-plugin-solid": "^2.7.0"
+  }
+}
