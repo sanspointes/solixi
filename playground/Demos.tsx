@@ -1,7 +1,7 @@
 /* @jsxImportSource solid-js */
 import { createSignal, onCleanup, onMount } from "solid-js";
 import { PContainer, PMesh, PMeshMaterial, PPlaneGeometry, useFrame } from "../src"
-import { Mesh } from "pixi.js";
+import { Mesh } from "@pixi/mesh";
 import { usePixi } from "../src/state";
 
 export const Interactivity = () => {

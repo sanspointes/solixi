@@ -3,7 +3,7 @@ import { createRAF } from '@solid-primitives/raf';
 
 import { Show, createSignal, onMount } from "solid-js"
 import { PContainer, PMesh, PMeshMaterial, PPlaneGeometry, useFrame } from "../src"
-import { Mesh, MeshMaterial } from 'pixi.js';
+import { Mesh, MeshMaterial } from '@pixi/mesh';
 
 export const Scene = () => {
   const [position, setPosition] = createSignal([100, 100], {
@@ -15,7 +15,6 @@ export const Scene = () => {
   });
 
   const toggleVisibility = () => {
-    console.log('Toggling visibility')
     setVisible(!visible());
     setTimeout(toggleVisibility, 1000);
   }
